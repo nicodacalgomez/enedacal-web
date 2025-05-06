@@ -3,4 +3,4 @@
 
 
 - [x] subir a github pages
-- [] cambiar a negativo el puntero (parte de abajo desaparece)
+- [ ] cambiar a negativo el puntero (parte de abajo desaparece)
