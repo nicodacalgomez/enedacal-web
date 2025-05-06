@@ -237,11 +237,10 @@ p{
   text-transform: uppercase;
   margin-bottom: auto;
   border-radius: 18px;
-  padding-top: 4px;                /* Reemplazar si usas altura fija */
   border: solid 0.8px black;
   letter-spacing: 0.03em;
-  width: 30%;
-  height: 20px;                     /* Asegúrate de definir una altura */
+  width: 45%;
+  height: 35px;                     /* Asegúrate de definir una altura */
 }
 
 .selected-project__title  {
