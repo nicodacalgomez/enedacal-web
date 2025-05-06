@@ -8,16 +8,16 @@
 
 @font-face {
   font-family:'sfreg';
-  src: url('../webnico/src/Fonts/SF-Pro-Display-Regular.otf'); 
+  src: url('./src/Fonts/SF-Pro-Display-Regular.otf'); 
 }
 
 @font-face {
   font-family:'sfbold';
-  src: url('../webnico/src/Fonts/SF-Pro-Display-Bold.otf'); 
+  src: url('./src/Fonts/SF-Pro-Display-Bold.otf'); 
 }
 @font-face {
   font-family:'sflight';
-  src: url('../webnico/src/Fonts/SF-Pro-Display-Light.otf'); 
+  src: url('./src/Fonts/SF-Pro-Display-Light.otf'); 
 }
 
 
