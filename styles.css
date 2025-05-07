@@ -260,6 +260,17 @@ p{
   max-width: 90;
 }
 
+.cursor-dot {
+  position: fixed;
+  width: 15px; /* Tamaño del puntero */
+  height: 15px;
+  background-color: black; /* Color del puntero */
+  border: 2px solid white; /* Borde blanco para contraste */
+  border-radius: 50%; /* Forma circular */
+  pointer-events: none; /* Evita interferir con clics */
+  z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra para mayor visibilidad */
+}
 
 
 /* PROYECTOS 
@@ -388,6 +399,11 @@ aspect-ratio: 4/5;
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
+  
+
+  #preload {
+    display: none; /* Oculta el preload en dispositivos móviles */
+  }
 
   .about-section {
     padding-top: 10px; /* Reduce el padding superior */
@@ -413,8 +429,8 @@ aspect-ratio: 4/5;
     }
   
   .parrafo-animado {
-    opacity: 0;
-    margin-top: 30%;
+    opacity: 0; /* Asegúrate de que el texto sea visible inmediatamente */
+    margin-top: 20%; /* Ajusta el margen superior si es necesario */
     font-size: 1.8em;
     letter-spacing: 0em;
     line-height: 98%;
