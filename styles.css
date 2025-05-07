@@ -265,7 +265,7 @@ p{
   width: 15px; /* Tamaño del puntero */
   height: 15px;
   background-color: black; /* Color del puntero */
-  border: 2px solid white; /* Borde blanco para contraste */
+  border: 2px solid #eeeeee; /* Borde blanco para contraste */
   border-radius: 50%; /* Forma circular */
   pointer-events: none; /* Evita interferir con clics */
   z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
