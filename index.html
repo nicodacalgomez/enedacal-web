@@ -480,7 +480,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Establecer el estado inicial de las líneas
+  gsap.set(".line.line-1", {
+    scaleX: 0, // Escala inicial en 0
+    transformOrigin: "left center", // Punto de origen para la animación
+  });
 
+  // Animar las líneas al cargar la página
+  gsap.to(".line.line-1", {
+    scaleX: 1, // Escala final en 1
+    duration: 1.5, // Duración de la animación
+    ease: "sine.inOut", // Efecto de suavizado
+    scrollTrigger: {
+      trigger: ".line.line-1", // Elemento que activa la animación
+      start: "top 85%", // Punto de inicio de la animación
+      end: "bottom 30%", // Punto de finalización de la animación
+      scrub: true, // Sincroniza la animación con el desplazamiento
+      markers: false, // Oculta los marcadores de depuración
+    },
+  });
+});
   
   
       </script>
