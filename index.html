@@ -56,12 +56,12 @@
 
    <!-- PROYECTOS -->
  <span class="line line-1"></span>
-   <h1 id="work">( SELECTED PROJECTS )</h1> 
+   <h1 id="work">(SELECTED PROJECTS)</h1> 
 
    <section class="selected-projects">
 
  <!-- TRAIL -->
-    <a href="#" class="selected-project">
+    <a href="./trail11y.html" class="selected-project">
       <div class="selected-project__background"></div>
       <div class="selected-project__video">
         <video src="./src/Images/Trail/Trail11y3.mp4" autoplay muted playsinline loop alt="BST"></video>
@@ -75,7 +75,7 @@
       </div>
     </a>
  <!-- BST -->
-    <a href="#" class="selected-project">
+    <a href="https://zeroheight.com/52b028991/p/83abbc-nuestra-marca" class="selected-project">
         <div class="selected-project__background"></div>
         <div class="selected-project__video">
           <video src="./src/Images/about/BST_Titel.mp4" autoplay muted playsinline loop alt="BST"></video>
@@ -89,7 +89,7 @@
         </div>
       </a>
    <!-- SCHALTABAU -->
-    <a href="#" class="selected-project">
+    <a href="https://schaltbau.com/de/loesungen/rail/steuerung-und-signal/" class="selected-project">
       <div class="selected-project__background" ></div>
       <div class="selected-project__video">
         <video src="./src/Images/about/Schaltbau_Titel.mp4" autoplay muted playsinline loop alt="schaltbau"></video>
@@ -105,7 +105,7 @@
     </a>    
 
        <!-- MOML -->
-       <a href="#" class="selected-project">
+       <a href="https://knomcreative.com/work/madrid-otra-mirada-literaria-en" class="selected-project">
         <div class="selected-project__background"></div>
         <div class="selected-project__video">
           <video src="./src/Images/moml/MOML.mp4" autoplay muted playsinline loop alt="moml"></video>
@@ -120,7 +120,7 @@
       </a>    
 
        <!-- AMRS -->
-       <a href="#" class="selected-project">
+       <a href="https://knomcreative.com/work/amigos-museo-reina-sofia-en" class="selected-project">
         <div class="selected-project__background" ></div>
         <div class="selected-project__video">
           <video src="./src/Images/amrs/AMRS_Titel.mp4" autoplay muted playsinline loop alt="amrs"></video>
@@ -224,7 +224,7 @@
   <div class="cv-grid">
     <div class="cv-entry">
       <p class="position">Senior Brand Designer</p>
-      <p class="location">Hotel Comenius (Berlin) & Hotel Friedrichstadt (Dresden) </p>
+      <p class="location">Freelance </p>
       <p class="date">2025</p>
     </div>
     <div class="cv-entry">
@@ -501,7 +501,27 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
-  
-  
-      </script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    const preload = document.getElementById("preload");
+    const contentWrapper = document.querySelector(".content-wrapper");
+
+    if (preload) {
+      // Mostrar el preload y luego ocultarlo con transición
+      setTimeout(() => {
+        preload.style.opacity = "0"; // Ocultar el preload con transición
+        preload.style.pointerEvents = "none";
+
+        // Después de la transición, ocultar completamente el preload
+        setTimeout(() => {
+          preload.style.display = "none";
+        }, 500); // Tiempo de la transición (debe coincidir con el CSS)
+        
+        if (contentWrapper) {
+          contentWrapper.style.opacity = "1"; // Mostrar el contenido después del preload
+        }
+      }, 5000); // Duración del preload antes de comenzar la transición
+    }
+  });
+</script>
 </body>

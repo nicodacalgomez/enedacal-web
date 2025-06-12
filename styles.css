@@ -62,6 +62,7 @@ body {
 
 /* MENU */
 .navbar {
+align-items: center;
 overflow: hidden;
 position: fixed; 
 top: 0; 
@@ -83,7 +84,7 @@ display: flex;
 font-size: 12px;
 text-decoration: none;
 color: #000000;
-margin: 12%;
+margin: 5%;
 }
 
 .navbar a:hover {
@@ -105,9 +106,9 @@ h1 {
   overflow: hidden;
   display: inline-block;
   z-index: 1000;
-  margin-left: 2%;
   width: auto;
   letter-spacing: 0.03em;
+  margin-left: 2%;
 }
 
 h2 {
@@ -132,7 +133,7 @@ h3 {
 
 #logo {
   font-family:'sfbold';
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
 p{
@@ -527,6 +528,7 @@ aspect-ratio: 4/5;
 
     #logo{
       text-align: left !important;
+      margin-left: 20px;
     }
 
   .cursor-dot {

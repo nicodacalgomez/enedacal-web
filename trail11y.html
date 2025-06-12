@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trail11y - Accessible hiking for everyone.">
+    <meta name="keywords" content="Trail11y, hiking, accessibility, community, nature">
+    <title>Trail11y | Accessible Hiking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./src/Images/about/colours_icon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="index.html" id="logo">ENEDACAL</a> <!-- Enlace a la página de inicio -->
+      <a href="index.html#work" id="boton-menu">WORK [+]</a> <!-- Enlace a la sección WORK en index.html -->
+      <a href="index.html#about" id="boton-menu">ABOUT [+]</a>
+      <div class="hora" id="hora"></div>
+    </div>
+
+    <section class="section-wrapper">
+      <!-- Texto introductorio -->
+      <div class="row row-1">
+        <div class="text-box1">
+          <h1>TRAIL11Y: HIKES FOR ALL.</h1>
+          <p>Exploring nature should be for everyone.</p>
+        </div>
+      </div>
+
+      <!-- Imagen completa -->
+      <div class="row row-1">
+        <div class="box">
+          <img src="./src/Images/Trail/Trail11y_BG1.png" alt="Trail Image">
+        </div>
+      </div> 
+
+      <!-- Texto + Imagen -->
+      <div class="row row-2">
+        <div class="text-box">
+          <h2>PURPOSE</h2>
+          <p>Trail11y is a mobile app designed <strong>to make hiking accessible for all.</strong> It provides detailed, reliable, and community-driven information about trails, focusing on accessibility, real-time updates, 
+            and an intuitive user experience.</p>
+        </div>
+        <div class="box">
+          <video src="./src/Images/Trail/Trail11y3.mp4" autoplay muted playsinline loop></video>
+        </div>
+      </div>
+
+      <!-- Imagen + Texto -->
+      <div class="row row-2">
+        <div class="box">
+          <img src="./src/Images/Trail/organigrama.png" alt="Trail Image 3">
+        </div>
+        <div class="text-box">
+          <h2>ORANIGRAMA</h2>
+          <p>Trail11y is a mobile app designed <strong>to make hiking accessible for all.</strong> It provides detailed, reliable, and community-driven information about trails, focusing on accessibility, real-time updates, 
+            and an intuitive user experience.</p>
+        </div>
+      </div>     
+
+      <!-- Imagen + Texto -->
+      <div class="row row-2">       
+        <div class="text-box">
+          <h2>USER FLOW & INFORMATION ARCHITECTURE</h2>
+          <p>Trail11y is a mobile app designed <strong>to make hiking accessible for all.</strong> It provides detailed, reliable, and community-driven information about trails, focusing on accessibility, real-time updates, 
+            and an intuitive user experience.</p> <br>
+         
+        </div>
+        <div class="box">
+          <video src="./src/Images/Trail/userflow2.mov" autoplay muted playsinline loop></video>
+        </div>         
+      </div>     
+
+      <!-- Imagen + Texto -->
+      <div class="row row-2">
+        <div class="box">
+          <img src="./src/Images/Trail/lowfid.png" alt="Trail Image">
+        </div>
+        <div class="text-box">
+          <p>Trail11y te permite descubrir rutas únicas mientras disfrutas de una experiencia accesible y enriquecedora.</p>
+        </div>
+      </div>        
+
+      <!-- Tres imágenes -->
+      <div class="row row-3">
+        <div class="box">
+          <img src="./src/Images/Trail/colors.png" alt="Trail Image 3">
+        </div>
+        <div class="box">
+          <img src="./src/Images/Trail/typos.png" alt="Trail Image 3">
+        </div>
+        <div class="box">
+          <img src="./src/Images/Trail/pics.png" alt="Trail Image 3">
+        </div>
+      </div>         
+      
+<!--
+      Texto explicativo 
+      <div class="row row-1">
+        <div class="text-box">
+          <h2>Una comunidad apasionada</h2>
+          <p>Trail11y está impulsado por una comunidad de senderistas que comparten sus experiencias para ayudar a otros a explorar rutas de manera segura y placentera.</p>
+        </div>
+      </div>
+
+    -->
+
+
+   <!-- Imagen completa3 -->
+   <div class="row row-1">
+    <div class="box">
+      <video src="./src/Images/Trail/components3.mov" autoplay muted playsinline loop></video>
+    </div>  
+    </div>
+
+      <!-- Imagen completa -->
+      <div class="row row-1">
+        <div class="box">
+          <img src="./src/Images/Trail/Iterationswithcomments.png" alt="Trail Image">
+        </div>
+      </div>       
+
+
+      <!-- Imagen completa -->
+      <div class="row row-1">
+        <div class="box">
+          <img src="./src/Images/Trail/Trail11y062.png" alt="Trail Image">
+        </div>
+      </div>     
+  <!-- Imagen + Imagen -->
+  <div class="row row-2">
+    <div class="box">
+      <img src="./src/Images/Trail/iphoneicon@3x.png" alt="Trail Image">
+    </div>
+    <div class="box">
+      <video src="./src/Images/Trail/Trail11y3.mp4" autoplay muted playsinline loop></video>
+    </div>
+  </div>      
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Scroll suave para los enlaces del menú
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+<style>
+  /* Reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+  --primary-color: #000000;
+  --bg-color: #eeeeee;
+  --font-regular: 'sfreg';
+  --font-bold: 'sfbold';
+  --font-light: 'sflight';
+}
+
+@font-face {
+  font-family: 'sfreg';
+  src: url('./src/Fonts/SF-Pro-Display-Regular.otf');
+}
+
+@font-face {
+  font-family: 'sfbold';
+  src: url('./src/Fonts/SF-Pro-Display-Bold.otf');
+}
+
+@font-face {
+  font-family: 'sflight';
+  src: url('./src/Fonts/SF-Pro-Display-Light.otf');
+}
+
+body {
+  font-family: var(--font-regular);
+  height: 100%;
+  margin: 0;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  color: var(--primary-color);
+  overflow-x: hidden;
+  cursor: none;
+  scroll-behavior: smooth;
+}
+
+/* MENU */
+.navbar {
+align-items: center;
+overflow: hidden;
+position: fixed; 
+top: 0; 
+width: 100%; 
+margin-top: 10px;
+display: grid;
+grid-template-columns: repeat(8, 1fr); 
+gap: 10px; /* Espacio entre elementos */
+box-sizing: border-box;
+z-index: 1000;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.navbar a {
+display: flex;
+font-size: 12px;
+text-decoration: none;
+color: #000000;
+margin: 5%;
+}
+
+.navbar a:hover {
+  filter: blur(1.5px);
+  transition: all 0.5s ease;
+  cursor: none;
+}
+
+.hora {
+grid-column: 8; /* Ocupa la última columna */
+font-size: 12px;
+text-align: right;
+border-radius: 5px;
+margin: 12%;
+}
+
+h1 {
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 1000;
+  width: auto;
+  letter-spacing: 0.03em;
+  margin-left: 2%;
+}
+
+h2 {
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 1000;
+  width: auto;
+  letter-spacing: 0.03em;
+  
+}
+
+h3 {
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 1000;
+  letter-spacing: 0em;
+  margin-left: 2%;
+  width: auto;
+}
+
+.text-box, .text-box1 {
+  font-family: var(--font-regular);
+}
+
+.text-box h1, .text-box h2, .text-box1 h1 {
+  font-family: var(--font-bold);
+}
+
+.text-box p, .text-box1 p {
+  font-family: var(--font-regular);
+
+}
+
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 50px;
+  }
+
+  /* Row grid layouts */
+  .row {
+    display: grid;
+    gap: 2vw;
+  }
+
+  .row-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 2vw; /* Espacio entre las cajas */
+  }
+
+  .row-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Box styling */
+  .box {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+  }
+
+  .box img, .box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background-color: #eeeeee;
+  }
+
+  /* Text box styling */
+  .text-box {
+    font-family: var(--font-regular);
+    padding: 20px;
+  
+   /* background-color: #f5f5f5;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  .text-box h1, .text-box h2 {
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .text-box p {
+    font-family:'sflight';
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .text-box1 {
+    font-family: var(--font-regular);
+    padding: 20px;
+    margin-top: 60px;
+  /*  background-color: #f5f5f5;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  .text-box1 h1, .text-box h2 {
+    font-family: var(--font-bold);
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+
+  .text-box1 p {
+    font-family:'sflight';
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .row-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .row-2 {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+      display: grid;
+      gap: 5vw; /* Espacio entre las cajas */
+    }
+
+      /* Row grid layouts */
+  .row {
+    display: grid;
+    gap: 2vw;
+  }
+  .section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 10px;
+  }
+
+  .row-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .row-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+    .navbar {
+        grid-template-columns: repeat(3, 1fr);
+        box-sizing: border-box;
+        z-index: 1000;
+        position: fixed;
+    }
+
+  .navbar a {
+    display:block;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000000;
+    text-align: right;
+    margin-left: 6.5%;
+    }  
+
+  .text-box p {
+    font-family:'sflight';
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  @media (max-width: 600px) {
+    .row-2, .row-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+</style>
+
+
+<script>
+  gsap.to(".box", {
+  opacity: 1,
+  y: 0,
+  duration: 1.2,
+  ease: "power2.out",
+  stagger: 0.15,
+  delay: 0.5
+});
+</script>
